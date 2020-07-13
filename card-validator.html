@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie-edge'>
+    <link rel='stylesheet' href='style.css'>
+    <title>Add payment method or edit existing payment methods</title>
+</head>
+
+<body>
+    <div class='container'>
+        <form id="form" class="form">
+            <h2>Add a New Payment Method</h2>
+            <hr width="100%" size="1">
+            <h3>Credit or debit cards</h3>
+            <h4>We accept major credit and debit cards.</h4>
+            <div class="form-control">
+                <label for="nameOnCard">Name on card</label>
+                <input type="text" id="nameOnCard">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="cardNumber">Card number</label>
+                <input type="password" id="cardNumber">
+                <small>Error message</small>
+            </div>
+            <label for="month-select">Expiration date</label><br>
+            <div class='dropdown-control'>
+                <select name="month-select" id="month-select">
+                <div class="dropdown-content">
+                    <option value="">--Please choose an option--</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </div>
+                </select>
+            </div>
+            <div class='dropdown-control'>
+                <select name="year-select" id="year-select">
+                <div class="dropdown-content">
+                    <option value="">--Please choose an option--</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </div>
+                </select><br>
+            </div>
+            <input type="checkbox" id="defaultPayment" name="defaultPayment" value="defaultPayment">
+            <label for="defaultPayment">Set as default payment method.</label><br>
+            <button>Add your card</button>
+            <radio></radio>
+        </form>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
